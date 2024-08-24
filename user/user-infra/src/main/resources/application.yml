@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/msa
+    username: kimsoungtae
+    password:
+    driver-class-name: org.postgresql.Driver
+mybatis:
+  type-aliases-package: com.prj.user.model
+  mapper-locations: classpath:mappers/**/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
